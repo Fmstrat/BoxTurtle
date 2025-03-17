@@ -12,7 +12,7 @@ It is a lot easier to do some of the calibrations (such as rotation distance) *B
 Our recommended guide to follow for calibration is [Ellis' Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/).
 
 ### Ensure minimum system requirements
-The AFC Klipper Add-On requires a minimum Klipper/Kalico version of 0.12.0, as well as a correspoding klippy-env python environment at least 3.x.
+The AFC Klipper Add-On requires a minimum Klipper/Kalico version of 0.12.0, as well as a corresponding klippy-env python environment at least 3.x.
 
 If you are on Klipper/Kalico 12, but running ``~/klippy-env/bin/python --version`` returns version 2.7.x, you can recreate it with the following.
 
@@ -60,6 +60,8 @@ cd AFC-Klipper-Add-On
 ```
 
 The default options for the park, cut, kick, wipe, and tip forming macros can be used if you don't know what to choose. These can all be changed later by editing ``AFC/AFC.cfg`` and doing a firmware restart.
+
+After the install completes, you should now see an AFC folder in your printer configuration directory, along with several files in there named ``AFC.cfg``, ``AFC_Hardware.cfg``, ``AFC_Macro_Vars.cfg``, and ``AFC_Turtle_1.cfg`` (if using the default name). If you do not see these files, or if you see duplicate files (e.g., your ``printer.cfg``) - this may be a caching issue with your web UI (mainsail/fluidd). Force a refresh with shift-reload of Ctrl+F5 and the problem should resolve itself.
 
 After installation, please ensure sure you update the following settings:
 - In ``AFC/AFC_Turtle_1.cfg``:
