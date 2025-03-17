@@ -61,7 +61,7 @@ cd AFC-Klipper-Add-On
 
 The default options for the park, cut, kick, wipe, and tip forming macros can be used if you don't know what to choose. These can all be changed later by editing ``AFC/AFC.cfg`` and doing a firmware restart.
 
-After the install completes, you should now see an AFC folder in your printer configuration directory, along with several files in there named ``AFC.cfg``, ``AFC_Hardware.cfg``, ``AFC_Macro_Vars.cfg``, and ``AFC_Turtle_1.cfg`` (if using the default name). If you do not see these files, or if you see duplicate files (e.g., your ``printer.cfg``) - this may be a caching issue with your web UI (mainsail/fluidd). Force a refresh with shift-reload of Ctrl+F5 and the problem should resolve itself.
+After the install completes, you should now see an AFC folder in your printer configuration directory, along with several files in there named ``AFC.cfg``, ``AFC_Hardware.cfg``, ``AFC_Macro_Vars.cfg``, and ``AFC_Turtle_1.cfg`` (if using the default name). If you do not see these files, or if you see duplicate files (e.g., your ``printer.cfg``) - this may be a caching issue with your web UI (mainsail/fluidd). Force a refresh with shift-reload or Ctrl+F5 and the problem should resolve itself.
 
 After installation, please ensure sure you update the following settings:
 - In ``AFC/AFC_Turtle_1.cfg``:
