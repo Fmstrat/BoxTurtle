@@ -5,7 +5,7 @@ The following guide will help you on the journey to multicolor printing after yo
 ## Prerequisites
 
 ### Calibrate/tune existing printer extruder
-If you are installing this on a new printer or extruder (including [FilamATrix](https://github.com/thunderkeys/FilamATrix) ensure you have calibrated your printer/extruder before introducing AFC/multicolor printing. If your extruder rotation distance is off by a large factor, this will cause issues with defining values such as ``tool_stn`` and others later on in the configuration.
+If you are installing this on a new printer or extruder (including [FilamATrix](https://github.com/thunderkeys/FilamATrix)) ensure you have calibrated your printer/extruder before introducing AFC/multicolor printing. If your extruder rotation distance is off by a large factor, this will cause issues with defining values such as ``tool_stn`` and others later on in the configuration.
 
 It is a lot easier to do some of the calibrations (such as rotation distance) *BEFORE* installing your BoxTurtle.
 
@@ -233,7 +233,7 @@ The recommended slicer for AFC is OrcaSlicer. Other slicers such as PrusaSlicer 
 For the printer you are adding BoxTurtle to, first go to the Printer settings, Multimaterial tab and ensure settings are configured as per the below screenshot.
 ![Orca_Printer_Settings](https://github.com/user-attachments/assets/1aa56051-dbbf-49a4-b818-368e00406b17)
 
-Also, on the Extruder 1 setting page - reduce ``Retraction while switching material`` length from the default of 2 to 0.5. (PrusaSlicer/SuperSlicer users, this default is 10mm and is on each extruder under the printer settings).
+Also, on the Extruder 1 setting page - reduce ``Retraction while switching material`` length from the default of 2 to 0.5.
 
 #### Adding additional filaments/extruders
 Increase the number of filaments to match your BoxTurtle's lane count. 
@@ -250,8 +250,25 @@ PRINT_START EXTRUDER=[nozzle_temperature_initial_layer] BED=[bed_temperature_ini
 
 - Set ``Change Filament G-Code`` to the below value.  Remove any other custom code here, e.g. extruder moves.
 ```
-T[next_extruder]
+T[next_extruder] PURGE_LENGTH=[flush_length]
+{ if toolchange_count == 1 }SET_AFC_TOOLCHANGES TOOLCHANGES=[total_toolchanges]{endif }
+;FLUSH_START
+;EXTERNAL_PURGE {flush_length}
+;FLUSH_END
 ```
+
+### Changes when using PrusaSlicer
+For the most part, many of the above settings are also applicable to other Slic3r derivatives such as PrusaSlicer or SuperSlicer.  Below are a list of some of the deviations. Reth also created a very good summary of the overview of tuning changes for PrusaSlicer in [this video](https://www.youtube.com/watch?v=ilxtHVNhsM4).
+
+- Instead of 'Change Filament G-Code', update the 'Tool Change G-Code' in printer settings to the below.
+```
+T[next_extruder]
+{if layer_num < 0}
+SET_AFC_TOOLCHANGES TOOLCHANGES=[total_toolchanges]
+{endif}
+```
+
+- Under each extruder in printer settings, change the default value of 'Retraction when tool is diabled' from 10mm to 0.5mm.
 
 #### Additional Slicer configuration - pre-OrcaSlicer 2.2.0
 Configuring per-material filament ramming is no longer required as of the official OrcaSlicer 2.2.0 release (PR [#6934](https://github.com/SoftFever/OrcaSlicer/pull/6934)).  If you are on an earlier version than that (including betas/release candidates) you will need to make the following additional changes to your slicer configurations.
