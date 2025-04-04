@@ -86,7 +86,10 @@ The default status indicators are:
 - Blue: Filament loaded to toolhead
 - White: Filament in process of being loaded
 
-After the self-test completes, you hopefully will see a picture of a happy turtle in the console log! If you get a picture of an error turtle, you may have a misconfigured AFC setting, broken pin or some other issue that needs attention.
+If the colors are different between LEDs, or if loading one changes the colors of others, your neopixel ``color_order`` (found in ``AFC/AFC_Turtle_1.cfg``) is incorrect. Try changing from the default of ``GRBW`` to ``GRB`` to start, those are the two most common options.
+
+
+After the self-test completes, you hopefully will see a picture of a happy turtle in the console log (NOTE: an upright turtle is a happy turtle)! If you get a picture of an error turtle (upside down), you may have a misconfigured AFC setting, broken pin or some other issue that needs attention.
 
 You can display the status of sensors in Mainsail/Fluidd as regular filament switches by setting ``enable_sensors_in_gui: True`` either globally in ``AFC/AFC.cfg`` or in the individual component section (e.g. extruders in ``AFC/Turtle_1.cfg``.
 
