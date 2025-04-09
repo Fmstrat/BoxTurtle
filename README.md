@@ -20,6 +20,17 @@ To accommodate any differences in rotation distance between the extruder in the 
 
 For best results we recommend the AFC-Lite, developed by [Isik's Tech @xbst](https://github.com/xbst/AFC-Lite/) as it has the necessary sensor ports and DC brushed motor drivers used for BoxTurtle's electric respoolers.
 
+# GUI support
+AFC integrates natively with [mainsail](https://www.mainsail.xyz), currently via [an open-source fork](https://github.com/ArmoredTurtle/mainsail-AFC/).
+
+![mainsail-AFC integration screenshot](https://github.com/ArmoredTurtle/BoxTurtle/images/mainsail-bt-htlf.png)
+
+KlipperScreen integration is under development, but until that is available you can use [Weemantella's BoxTurtle KlipperScreen Menus](https://github.com/weemantella/Box-Turtle-Klipper-Screen-Menus).
+
+[Fluidd](https://docs.fluidd.xyz/) integration is also being worked, but no announcements at this time.
+
+![BoxTurtle_AFC-Lite_Pinout](https://github.com/user-attachments/assets/59a0e1d9-f870-4c50-a056-59aa76489e71)
+
 # For best results
 
 ## AFC Klipper Add-On
