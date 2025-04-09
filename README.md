@@ -29,8 +29,6 @@ KlipperScreen integration is under development, but until that is available you 
 
 [Fluidd](https://docs.fluidd.xyz/) integration is also being worked, but no announcements at this time.
 
-![BoxTurtle_AFC-Lite_Pinout](https://github.com/user-attachments/assets/59a0e1d9-f870-4c50-a056-59aa76489e71)
-
 # For best results
 
 ## AFC Klipper Add-On
