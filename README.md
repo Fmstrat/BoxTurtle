@@ -21,7 +21,7 @@ To accommodate any differences in rotation distance between the extruder in the 
 For best results we recommend the AFC-Lite, developed by [Isik's Tech @xbst](https://github.com/xbst/AFC-Lite/) as it has the necessary sensor ports and DC brushed motor drivers used for BoxTurtle's electric respoolers.
 
 # GUI support
-AFC integrates natively with [mainsail](https://www.mainsail.xyz), currently via [an open-source fork](https://github.com/ArmoredTurtle/mainsail-AFC/). As shown below, it can integrate with units with different types (in this case, BoxTurtle and [HTLF](https://www.printables.com/model/1249234-happyturtlelettucefeeder-htlf-by-armoredturtle-an).
+AFC integrates with [mainsail](https://www.mainsail.xyz), currently via [an open-source fork](https://github.com/ArmoredTurtle/mainsail-AFC/). As shown below, it can integrate with units with different types (in this case, BoxTurtle and [HTLF](https://www.printables.com/model/1249234-happyturtlelettucefeeder-htlf-by-armoredturtle-an)).
 
 ![mainsail-AFC integration screenshot](https://raw.githubusercontent.com/ArmoredTurtle/BoxTurtle/refs/heads/main/images/mainsail-bt-htlf.png)
 
