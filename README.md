@@ -23,7 +23,7 @@ For best results we recommend the AFC-Lite, developed by [Isik's Tech @xbst](htt
 # GUI support
 AFC integrates natively with [mainsail](https://www.mainsail.xyz), currently via [an open-source fork](https://github.com/ArmoredTurtle/mainsail-AFC/).
 
-![mainsail-AFC integration screenshot](https://github.com/ArmoredTurtle/BoxTurtle/images/mainsail-bt-htlf.png)
+![mainsail-AFC integration screenshot](https://raw.githubusercontent.com/ArmoredTurtle/BoxTurtle/refs/heads/main/images/mainsail-bt-htlf.png)
 
 KlipperScreen integration is under development, but until that is available you can use [Weemantella's BoxTurtle KlipperScreen Menus](https://github.com/weemantella/Box-Turtle-Klipper-Screen-Menus).
 
