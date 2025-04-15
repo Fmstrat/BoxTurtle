@@ -10,4 +10,16 @@ The goal of BoxTurtle is to deliver a user experience as close to an AMS as poss
 
 If you appreciate the work we are doing, you can support us [here](https://www.paypal.com/donate/?hosted_button_id=J4WRJBYGFYHLE).
 
-For more information, please visit the [official ArmoredTurtle documentation site](https://www.armoredturtle.xyz/docs/index.html).
+# BoxTurtle sourcing/vendors
+While BoxTurtle can be mostly [self-sourced](https://www.armoredturtle.xyz/docs/boxturtle/bom.html), some vendors offer partial or full BoxTurtle kits. Vetted vendors have dedicated channels on the Armored Turtle Discord and are on the [Vendor List](https://www.armoredturtle.xyz/docs/boxturtle/vendors.html) on the Armored Turtle documentation site.
+
+If you purchase a kit from a vendor not on this list, it has not been validated in any way by the ArmoredTurtle team for either quality or completeness. For best results we recommend using a trusted vendor from the list linked above whenever possible. If you are a vendor and would like to be added to this list, please open a ticket on our Discord to request being added.
+
+Of particular note we caution buyers to ensure they are sourcing a kit that comes with an AFC-Lite controller board. Some vendors, such as Blurolls, are selling kits on AliExpress with an 'AFC-X' board which has subpar manufacturing quality in the sample we purchased. The unit we purchased only survived two days, we have not evaluated further units beyond that.
+
+If you have questions about the legitemacy of a kit, we highly suggest you *research/ask before purchasing it*
+
+[Caveat emptor](https://en.wikipedia.org/wiki/Caveat_emptor)
+
+# Documentation, BOM, Assembly Manuals, etc.
+For more information and documentation, please visit the [official ArmoredTurtle documentation site](https://www.armoredturtle.xyz/docs/index.html).
