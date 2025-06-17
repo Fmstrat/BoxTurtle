@@ -6,7 +6,7 @@ BoxTurtle Automated Filament Control
 
 BoxTurtle is exactly what it appears to be — an open source AMS style filament changer for [Klipper](https://klipper3d.org) machines. 
 BoxTurtle requires the AFC-Klipper Add-On (found [here](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On)).
-The goal of BoxTurtle is to deliver a user experience as close to an AMS as possible in vanilla Klipper. i.e. an "AMS" for any klipperized printer regardless of form factor but [VORON Design](https://vorondesign.com) printers in particular.
+The goal of BoxTurtle is to deliver a user experience as close to an AMS as possible in vanilla Klipper. e.g. an "AMS" for any klipperized printer regardless of form factor but [VORON Design](https://vorondesign.com) printers in particular.
 
 If you appreciate the work we are doing, you can support us [here](https://www.paypal.com/donate/?hosted_button_id=J4WRJBYGFYHLE).
 
